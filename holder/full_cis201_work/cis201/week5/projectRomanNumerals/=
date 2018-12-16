@@ -1,0 +1,366 @@
+/*
+File name: main.cpp
+Description: this program will prompt the user for a number then 
+return the roman numeral equalivalent between 1 and 4000
+it will then ask 4 digit questions that will give the equivalant
+value for that roman numeral digit
+it will last return the full number entered in the digit portion
+Author: Troy Millard
+*/
+#include <iostream>
+#include <cstdlib>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    //declare roman integer and integers for 2nd translation 
+    int roman;
+
+    int thousandsplace;
+    int hundredsplace;
+    int tensplace;
+    int onesplace;
+
+    cout << "Enter a positive number from one to four thousand" << endl; //prompt for number
+    cin >> roman;
+   
+    if (roman >= 0 and roman <= 4000) //start of first translator sets range and declares integers for first prompt
+    {
+   
+     int thousands = roman / 1000;
+     int hundreds = roman / 100 % 10;
+     int tens = roman / 10 % 10;
+     int ones = roman % 10;
+
+     if (thousands == 1) //if for thousands digit 
+        {
+            cout << "M"  ; 
+        }
+        else if (thousands == 2)
+        {
+            cout << "MM"  ; 
+        }
+        else if (thousands == 3)
+        {
+            cout << "MMMM"  ; 
+        }
+        else if (thousands == 4)
+        {
+            cout << "MMMM"  ;        
+        }
+ 
+    if (hundreds == 1) //if for hundreds digit  
+        {
+            cout << "C"  ; 
+        }
+        else if (hundreds == 2)
+        {
+            cout << "CC"  ; 
+        }
+        else if (hundreds == 3)
+        {
+            cout << "CCC"  ; 
+        }
+        else if (hundreds == 4)
+        {
+             cout << "CD"  ;        
+        }
+        else if (hundreds == 5)
+        {
+            cout << "D"  ;   
+        }
+        else if (hundreds == 6)
+        {
+            cout << "DC"  ; 
+        }
+        else if (hundreds == 7)
+        {
+            cout << "DCC"  ; 
+        }
+        else if (hundreds == 8)
+        {
+            cout << "DCCC"  ; 
+        }
+        else if (hundreds == 9)
+        {
+             cout << "CM"  ;        
+        }
+
+    if (tens == 1)  //if for tens digit 
+        {
+            cout << "X"  ; 
+        }
+        else if (tens == 2)
+        {
+            cout << "XX"  ; 
+        }
+        else if (tens == 3)
+        {
+            cout << "XXX"  ; 
+        }
+        else if (tens == 4)
+        {
+             cout << "XL"  ;        
+        }
+        else if (tens == 5)
+        {
+            cout << "L"  ;   
+        }
+        else if (tens == 6)
+        {
+            cout << "LX"  ; 
+        }
+        else if (tens == 7)
+        {
+            cout << "LXX"  ; 
+        }
+        else if (tens == 8)
+        {
+            cout << "LXXX"  ; 
+        }
+        else if (tens == 9)
+        {
+             cout << "XC"  ;        
+        }
+
+    if (ones == 1) //if for ones digit 
+        {
+            cout << "I" << endl; 
+        }
+        else if (ones == 2)
+        {
+            cout << "II" << endl; 
+        }
+        else if (ones == 3)
+        {
+            cout << "III" << endl; 
+        }
+        else if (ones == 4)
+        {
+             cout << "IV" << endl;        
+        }
+        else if (ones == 5)
+        {
+            cout << "V" << endl;   
+        }
+        else if (ones == 6)
+        {
+            cout << "VI" << endl; 
+        }
+        else if (ones == 7)
+        {
+            cout << "VII" << endl; 
+        }
+        else if (ones == 8)
+        {
+            cout << "VIII" << endl; 
+        }
+        else if (ones == 9)
+        {
+             cout << "IX" << endl;        
+        }
+     else //declaration stating entry is outside prompted number range or invalid entry
+       {
+               cout << "invalid entry or outside number range" << endl;
+               cout << "please try again" << endl; 
+       }
+    
+    if (roman == 0) //if for zero
+        {
+            cout << "nulla" << endl;
+        }
+   }
+
+     if (roman >= 0 and roman <= 4000) //set range for 2nd translation: digit translation
+     {
+        cout << "" << endl; //prompt for second translation
+        cout << "let's make another number to see how to translate digits" << endl; //prompt for second translation
+ 
+        cout << "enter the thousands place" << endl; //prompt for thousands place
+ 
+        cin >> thousandsplace;
+ 
+        if (thousandsplace == 1) //if for thousandsplace digit 
+        {
+            cout << "M" << endl; 
+        }
+        else if (thousandsplace == 2)
+        {
+            cout << "MM" << endl; 
+        }
+        else if (thousandsplace == 3)
+        {
+            cout << "MMMM" << endl; 
+        }
+        else if (thousandsplace == 4)
+        {
+            cout << "MMMM" << endl;        
+        }
+
+        else
+        {
+            cout << "outside range" << endl;
+        }
+        
+        cout << "enter the hundreds place" << endl; //prompt for hundreds place
+  
+        cin >> hundredsplace;
+  
+        if (hundredsplace == 1) //if for hundredsplace digit  
+        {
+            cout << "C" << endl; 
+        }
+        else if (hundredsplace == 2)
+        {
+            cout << "CC" << endl; 
+        }
+        else if (hundredsplace == 3)
+        {
+            cout << "CCC" << endl; 
+        }
+        else if (hundredsplace == 4)
+        {
+             cout << "CD" << endl;        
+        }
+        else if (hundredsplace == 5)
+        {
+            cout << "D" << endl;   
+        }
+        else if (hundredsplace == 6)
+        {
+            cout << "DC" << endl; 
+        }
+        else if (hundredsplace == 7)
+        {
+            cout << "DCC" << endl; 
+        }
+        else if (hundredsplace == 8)
+        {
+            cout << "DCCC" << endl; 
+        }
+        else if (hundredsplace == 9)
+        {
+             cout << "CM" << endl;        
+        }
+
+        else
+        {
+            cout << "outside range" << endl;
+        }
+ 
+        cout << "enter the tens place" << endl; //prompt for tens place
+
+        cin >> tensplace;
+
+        if (tensplace == 1)  //if for tensplace digit 
+        {
+            cout << "X" << endl; 
+        }
+        else if (tensplace == 2)
+        {
+            cout << "XX" << endl; 
+        }
+        else if (tensplace == 3)
+        {
+            cout << "XXX" << endl; 
+        }
+        else if (tensplace == 4)
+        {
+             cout << "XL" << endl;        
+        }
+        else if (tensplace == 5)
+        {
+            cout << "L" << endl;   
+        }
+        else if (tensplace == 6)
+        {
+            cout << "LX" << endl; 
+        }
+        else if (tensplace == 7)
+        {
+            cout << "LXX" << endl; 
+        }
+        else if (tensplace == 8)
+        {
+            cout << "LXXX" << endl; 
+        }
+        else if (tensplace == 9)
+        {
+             cout << "XC" << endl;        
+        }
+
+        else
+        {
+            cout << "outside range" << endl;
+        }
+ 
+        cout << "enter the ones place" << endl; //prompt for ones place
+
+        cin >> onesplace;
+      
+        if (onesplace == 1) //if for onesplace digit 
+        {
+            cout << "I" << endl; 
+        }
+        else if (onesplace == 2)
+        {
+            cout << "II" << endl; 
+        }
+        else if (onesplace == 3)
+        {
+            cout << "III" << endl; 
+        }
+        else if (onesplace == 4)
+        {
+             cout << "IV" << endl;        
+        }
+        else if (onesplace == 5)
+        {
+            cout << "V" << endl;   
+        }
+        else if (onesplace == 6)
+        {
+            cout << "VI" << endl; 
+        }
+        else if (onesplace == 7)
+        {
+            cout << "VII" << endl; 
+        }
+        else if (onesplace == 8)
+        {
+            cout << "VIII" << endl; 
+        }
+        else if (onesplace == 9)
+        {
+             cout << "IX" << endl;        
+        }
+
+               else
+        {
+            cout << "outside range" << endl;
+        }
+
+     if (onesplace == 0 and tensplace == 0 and hundredsplace == 0 and thousandsplace == 0) //if for all zero digits
+        {
+           cout << "nulla" << endl;  
+        }
+
+
+
+        cout << "" << endl;
+        cout << "once your digits are combined, your number equals" << endl;
+ 
+        cout << thousandsplace;
+
+        cout << hundredsplace;
+
+        cout << tensplace;
+
+        cout << onesplace << endl;
+
+    }
+    
+    return 0;
+}

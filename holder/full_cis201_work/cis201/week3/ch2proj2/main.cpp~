@@ -1,0 +1,47 @@
+/*
+File name: main.cpp
+Description: This program will prompt the user for a radius then
+print:
+	The area and circumference of a circle with that radius
+	The volume and surface area of a sphere with that radius
+
+Author: Troy Millard
+Email: naglet@student.vvc.edu
+*/
+#include<iostream>
+
+using namespace std;
+
+int main()
+{	
+
+	// Declare the radius, area, volume, sarea, circum	
+	double area, volume, sarea, circum, radius, Pi;
+
+	double Pi = 3.14159;
+
+
+	//prompt the user for the radius	
+	Prompt for radius 
+	cout << "Enter the radius";	
+	cin  >> radius;
+
+	//calc circum 2 * Pi * radius of the circle with given radius
+	circum = 2 * radius * Pi 
+	
+	//calc area Pi radius squared of the circle with given radius
+	area = radius * radius * Pi
+
+	//calc volume 4/3 Pi radius cubed of the sphere with given radius
+	volume = 4/3 * 
+
+	//calc sarea 4 Pi radius squared of the sphere with given radius
+
+
+	//print the circumference
+	//print the area
+	//print the volume
+	//print the surface area
+	
+	return 0;
+}

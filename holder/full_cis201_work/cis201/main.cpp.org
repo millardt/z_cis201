@@ -1,0 +1,80 @@
+/*
+   File name: String function -- valid number
+   Description: Implement the is_valid_number function.
+   Author: Troy Millard
+   Email: naglet@student.vvc.edu
+*/
+ 
+ 
+  #include<iostream>
+ 
+  #include<string>
+ 
+ 
+  using namespace std;
+ 
+ 
+  bool is_printable(char c)
+  {
+ 
+      return ( c >= ' ' && c <= '~');
+ 
+  }
+ 
+ 
+  bool is_digit(char c)
+  {
+ 
+      return c >='0' && c <= '9';
+ 
+  }
+ 
+ 
+  int to_int(char c)
+  {
+ 
+      return c - '0';
+ 
+  }
+ 
+ 
+   bool is_valid_number(string s)
+     {
+     bool validity;
+     for (int i=0<s.length()i++)
+     if( is_digit(s.at(i) == 1))
+     {
+          cout << "Valid" << endl;
+     }
+      
+     else
+     {
+         cout << "Not valid" << endl;
+     }
+      
+     return validity;
+ }
+
+ 
+  int main()
+ 
+  {
+ 
+      string s = "30349875340958034985039485093485024a958";
+ 
+      if(is_valid_number(s))
+ 
+      {
+ 
+          cout << "yes it is valid" << endl;
+      }
+ 
+      else
+ 
+      {
+ 
+          cout << "no it is not valid" << endl;
+ 
+      }
+      return 0;
+  }
